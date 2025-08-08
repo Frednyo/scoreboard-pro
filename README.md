@@ -15,25 +15,6 @@ Une application web ultra stylée pour gérer les scores de vos matchs, qu’ils
 
 ---
 
-## 🚀 Déploiement rapide sur GitHub Pages
-
-1. **Créer un dépôt GitHub**  
-   Nomme-le par exemple `scoreboard-pro`.
-
-2. **Uploader le fichier `index.html`**  
-   Glisse-le directement à la racine du dépôt.
-
-3. **Activer GitHub Pages**  
-   - Va dans *Settings* → *Pages*.  
-   - Choisis la branche `main` (ou `master`) et le dossier `/ (root)`.  
-   - Sauvegarde.  
-
-4. **Accéder à ton scoreboard**  
-   Ton site sera dispo quelques secondes plus tard à l’adresse :  
-   `https://<ton-utilisateur>.github.io/<nom-du-repo>/`
-
----
-
 ## 🖥 Utilisation
 
 - **Ajouter une équipe** → clique sur `+ Équipe`.
