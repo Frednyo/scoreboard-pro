@@ -1,39 +1,64 @@
-# Scoreboard Pro - Déploiement GitHub Pages
+# 🏆 Scoreboard Pro
 
-Ce dépôt contient une petite application HTML/CSS/JS (fichier `index.html`) — un scoreboard stylé pour gérer un match multijoueurs.
+Une application web ultra stylée pour gérer les scores de vos matchs, qu’ils soient sportifs, e-sportifs ou même… concours de tartes à la crème 🍰.
 
-## Contenu
-- `index.html` : l'application complète (frontend uniquement).
+![Scoreboard Preview](https://user-images.githubusercontent.com/000000/scoreboard-preview.png) <!-- Remplace par un vrai screenshot -->
 
-## Déployer sur GitHub Pages (méthode simple - interface web)
-1. Crée un nouveau dépôt sur GitHub (nom au choix, par exemple `scoreboard-pro`).
-2. Ajoute `index.html` à la racine du dépôt (upload via l'interface web).
-3. Dans les *Settings* du dépôt → *Pages* → sélectionne la branche `main` (ou `master`) et le dossier `/ (root)`.
-4. Enregistre. Après quelques secondes, ton site sera disponible à l'adresse `https://<ton-utilisateur>.github.io/<nom-du-repo>/`.
+## ✨ Fonctionnalités
 
-## Déployer avec git en local (ligne de commande)
-```bash
-# depuis le dossier contenant index.html
-git init
-git add index.html
-git commit -m "Initial commit - Scoreboard Pro"
-# remplace <user> et <repo> par tes infos
-git remote add origin https://github.com/<user>/<repo>.git
-git branch -M main
-git push -u origin main
-```
-Puis active GitHub Pages dans les Settings (branch `main`, dossier `/ (root)`).
+- ➕ **Ajout d'équipes à la volée** — de 2 à autant que vous voulez.
+- 🖊 **Renommage rapide** des équipes par simple clic sur le nom.
+- 📈 **Gestion des points** : +10 ou -10 (et oui, les scores négatifs sont autorisés).
+- ⏱ **Chronomètre intégré** avec start / pause / reset.
+- 🏁 **Bouton "Fin du match"** qui affiche un écran de félicitations au(x) vainqueur(s).
+- 🎨 **Design futuriste** avec animations et effets glow.
 
-## Déployer automatiquement (gh CLI)
-Si tu as l'outil `gh` :
-```bash
-gh repo create <user>/<repo> --public --source=. --push
-# puis active pages si nécessaire via l'interface ou via gh api
-```
+---
 
-## Remarques
-- Le site est entièrement statique : pas besoin de backend.
-- Tu peux personnaliser `index.html` (couleurs, textes).
-- Si tu veux, je peux générer automatiquement la repo & la publier — mais j'aurai besoin d'accès à ton compte GitHub (et tu dois me le fournir ou faire la procédure toi-même). Par sécurité, je ne peux pas pousser sur ton compte sans autorisation explicite et un moyen d'accès.
+## 🚀 Déploiement rapide sur GitHub Pages
 
-Bonne mise en ligne — dis-moi si tu veux que je prépare un README en français plus joli, un logo, ou une version avec favicon + meta tags pour partage social.
+1. **Créer un dépôt GitHub**  
+   Nomme-le par exemple `scoreboard-pro`.
+
+2. **Uploader le fichier `index.html`**  
+   Glisse-le directement à la racine du dépôt.
+
+3. **Activer GitHub Pages**  
+   - Va dans *Settings* → *Pages*.  
+   - Choisis la branche `main` (ou `master`) et le dossier `/ (root)`.  
+   - Sauvegarde.  
+
+4. **Accéder à ton scoreboard**  
+   Ton site sera dispo quelques secondes plus tard à l’adresse :  
+   `https://<ton-utilisateur>.github.io/<nom-du-repo>/`
+
+---
+
+## 🖥 Utilisation
+
+- **Ajouter une équipe** → clique sur `+ Équipe`.
+- **Changer un nom** → clique sur le nom de l’équipe et tape le nouveau.
+- **Modifier le score** → boutons `+10` et `-10` (pas de limite minimale ou maximale).
+- **Gérer le chrono** → démarrer, mettre en pause ou réinitialiser.
+- **Terminer la partie** → bouton `🏁 Fin du match`.
+
+---
+
+## 📷 Capture d’écran
+
+![Capture Scoreboard](https://user-images.githubusercontent.com/000000/scoreboard-screenshot.png) <!-- Remplace par une vraie capture -->
+
+---
+
+## 🛠 Personnalisation
+
+- Les couleurs par défaut peuvent être modifiées dans la fonction `addTeam()` ou directement dans le CSS.
+- Tu peux changer la police, les effets, ou ajouter ton logo.
+- Compatible avec tous les navigateurs modernes.
+
+---
+
+## 📄 Licence
+
+Ce projet est open-source, libre de modification et d’utilisation, tant que vous mentionnez l’auteur original.  
+Amusez-vous bien et que le meilleur gagne ! 🥇
